@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | My College Diary</title>
+    <style>
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+        }
+        
+        body { 
+            background-color: rgb(100, 7, 88);
+            color: white; 
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header { 
+            padding: 20px 60px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 4px solid white; 
+        }
+        
+        header h1 a {
+            text-decoration: none;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 25px; 
+            font-size: 20px; 
+            font-weight: bold; 
+        }
+        
+        nav a:hover { 
+            text-decoration: underline; 
+            color: #ffb6c1; 
+            transition: 0.3s; 
+        }
+
+        .container { 
+            flex: 1;
+            padding: 50px 10%; 
+            text-align: center; 
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 40px; 
+            margin-bottom: 60px;
+        }
+
+        .gallery-item { 
+            background: white; 
+            border: 4px solid white; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-shadow: 12px 12px 0px black; 
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .gallery-item:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 18px 18px 0px black; 
+        }
+        
+        .gallery-item img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover; 
+            border-bottom: 3px solid rgb(100, 7, 88);
+            display: block; 
+        }
+        
+        .caption { 
+            padding: 20px; 
+            color: black; 
+            background-color: #fff;
+            text-align: left;
+        }
+
+        .caption h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: rgb(100, 7, 88);
+        }
+
+        .caption p {
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        footer { 
+            padding: 20px; 
+            border-top: 4px solid white; 
+            text-align: center; 
+            font-weight: bold; 
+            background-color: rgb(100, 7, 88);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My College Diary</h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a>
+            <a href="diary.html">Diary</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="gallery-item">
+                <img src="school day.jpg" alt="First Day of School!!">
+                <div class="caption">
+                    <h3>First day of School!</h3>
+                    <p>my first day was good. I am still a little nervous, but I am also excited to learn new things and make new friends.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="new friends.jpg" alt="New friends!">
+                <div class="caption">
+                    <h3>New friends!</h3>
+                    <p>I met new friends at school. At first, I felt shy and didn’t know how to talk to them. But slowly, we started to introduce ourselves and share small things about us!</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="research.jpg" alt="research day!">
+                <div class="caption">
+                    <h3>Research days!</h3>
+                    <p>Even though it was hard, those days taught me patience, teamwork, and responsibility. Looking back now, I feel proud because we were able to finish our research together.</p>
+                    </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <img src="CODE.jpg" alt="firstcode">
+                <div class="caption">
+                    <h3>Code Using CMD!!</h3>
+                    <p>Using CMD made me feel like a real programmer because I was controlling the computer using commands. It was a bit challenging, but also fun and interesting. I hope to learn more about coding in the future.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="it week.jpg" alt="it week">
+                <div class="caption">
+                    <h3>IT WEEK!!</h3>
+                    <p>Way back during our IT Week, the cheerdance competition was one of the most memorable events. I still remember how excited everyone was, from the practices up to the actual performance day. </p>
+                    </div>
+            </div>
+            
+             <div class="gallery-item">
+                <img src="cheerdance.jpg" alt="CHEERDANCE">
+                <div class="caption">
+                    <h3>CHEERDANCE!! LET'S GO IT!!</h3>
+                    <p>On the day of the performance, we felt nervous but also excited. When the music started, we gave our best and enjoyed every moment. The cheers from the crowd made us more confident and happy.</p>
+                    </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="1st.jpg" alt="1st PLACE">
+                <div class="caption">
+                    <h3>1ST PALCE IT!!</h3>
+                    <p>Looking back, that cheerdance moment was not just about winning, but about teamwork, fun, and unforgettable memories. </p>
+                    </div>
+            </div>
+
+
+
+             <div class="gallery-item">
+                <img src="Circles.jpg" alt="Circles">
+                <div class="caption">
+                    <h3>Unwind !</h3>
+                    <p>Moments like this remind me how important it is to rest and enjoy time with friends.</p>
+                    </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="exam.jpg" alt="Exam Days first sem!">
+                <div class="caption">
+                    <h3>exam Day!!</h3>
+                    <p>I felt tired but also proud of myself. It was a new experience, and I learned a lot. I hope I did well in the exam.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="movie.jpg" alt="CINE TIME">
+                <div class="caption">
+                    <h3>CINE!!</h3>
+                    <p>That day reminded me how important it is to take a break and spend time with friends after stressful moments. It became one of the best memories I had.</p>
+                    </div>
+            </div>
+
+
+             <div class="gallery-item">
+                <img src="webse.jpg" alt="SEMINAR">
+                <div class="caption">
+                    <h3>SEMINAR!</h3>
+                    <p>This seminar was not just about learning, but also about motivating us to improve our skills and be ready for our future careers in IT.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="mcdo.jpg" alt="MY BIRTHDAY">
+                <div class="caption">
+                    <h3>MY BIRTHDAY!!</h3>
+                    <p>It may not be a grand celebration, but it was full of joy and happiness. This day reminded me to be grateful for another year of life and the blessings I have.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="new place.jpg" alt="FILM">
+                <div class="caption">
+                    <h3>FILM!!</h3>
+                    <p>film was a great experience because it helped me unwind and learn at the same time.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="eat.jpg" alt="LUNCH WITH HOMIES">
+                <div class="caption">
+                    <h3>LUNCH WITH HOMIES!!</h3>
+                    <p>Even if it was just a simple meal, it felt special because I was with the people who make me comfortable and happy.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="art.jpg" alt="paint">
+                <div class="caption">
+                    <h3>PAINT USING BLACK COFFEE!!</h3>
+                    <p>This activity showed that art can be made from simple things and that creativity has no limits. It was a memorable and enjoyable experience.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="exam.jpg" alt="arduino">
+                <div class="caption">
+                    <h3>ARDUINO PROJECT!</h3>
+                    <p>Arduino project was a challenging but exciting experience. We learned how to connect different components like sensors, LEDs, and wires, and how to control them using code.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="walk.jpg" alt="it week ">
+                <div class="caption">
+                    <h3>IT WEEK!</h3>
+                    <p>IT Week in the 2nd semester was a meaningful and enjoyable experience that I will always remember.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="basket.jpg" alt="VOLLEYBALL">
+                <div class="caption">
+                    <h3>BLUE WIZZARD!!!</h3>
+                    <p>Support the Blue Wizard Team! 💙🔥 Show your power, spirit, and unity—Go Blue Wizards!</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="sportest.jpg" alt="champion">
+                <div class="caption">
+                    <h3>CHAMPION !!!</h3>
+                    <p>CHAMPION BLUE WIZARD! 💙🔥 Grabe ang laban, sulit ang effort, we made it!</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="appdev.jpg" alt="arduino">
+                <div class="caption">
+                    <h3>TESTING OUR PROJECT IN BREADBORD!!!</h3>
+                    <p>Testing our Arduino project is an important step to make sure that all components are working properly. During this stage, we check if the sensors, LEDs, and other parts respond correctly based on the code we uploaded.</p>
+                    </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="aruido.jpg" alt="WIRING">
+                <div class="caption">
+                    <h3>TRANSFER TO PCB!!</h3>
+                    <p>After successfully testing our Arduino project, the next step is transferring the circuit to a Printed Circuit Board (PCB). This process makes the project more organized, permanent, and durable compared to using a breadboard.</p>
+                    </div>
+            </div>
+
+
+             <div class="gallery-item">
+                <img src="oca.jpg" alt="FINAL PRODUCT">
+                <div class="caption">
+                    <h3>FINISHED PRODUCT!!!</h3>
+                    <p>We successfully completed our Arduino project by transferring the circuit from a breadboard to a PCB and ensuring that all components function properly. After assembling and soldering the parts, we conducted final testing to verify that the system works as expected.</p>
+                    </div>
+            </div>
+
+
+             <div class="gallery-item">
+                <img src="court.jpg" alt="EXHIBIT">
+                <div class="caption">
+                    <h3>EXHIBIT DAY 1!!</h3>
+                    <p>Today was the first day of our exhibit. I felt excited and a little nervous at the same time. We prepared our project and set up everything carefully. Many people came to visit our booth, and some asked questions about our work. It was fun explaining how our project works.</p>
+                    </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <img src="day2.jpg" alt="exhibit day 2">
+                <div class="caption">
+                    <h3>EXHIBIT DAY2!!</h3>
+                    <p>Still going strong, still proud! 💪✨</p>
+                    </div>
+            </div>
+
+
+             <div class="gallery-item">
+                <img src="last exhibit.jpg" alt="certificate">
+                <div class="caption">
+                    <h3>CERTIFICATE!!!</h3>
+                    <p>Received a certificate award for participation and contribution in the exhibit, recognizing effort, creativity, and presentation.</p>
+                    </div>
+            </div>
+       
+
+	
+</body>
+</html>
